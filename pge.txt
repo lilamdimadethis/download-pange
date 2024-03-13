@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raid Arena Client Download</title>
+    <style>
+        body {
+            background-image: url('https://nexusadmin.co/stars-bg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        #download-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .download-button {
+            margin: 10px;
+            padding: 15px 30px;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #000000;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #333333;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="download-container">
+        <img src="icon.png" alt="Raid Arena Icon">
+        <button class="download-button" onclick="downloadSetupEXE()">Download RAIDUpdater-Setup.exe</button>
+        <button class="download-button" onclick="downloadClientZIP()">Download RaidArena-Client .ZIP</button>
+    </div>
+
+    <script>
+        var downloadSetupEXE = () => window.location.href = "https://download.raidarena.io/RAIDUpdater-Setup.exe";
+        var downloadClientZIP = () => window.location.href = "https://download.raidarena.io/RaidArena-Client_Early-Access_Windows_x64.zip";
+    </script>
+</body>
+
+</html>
